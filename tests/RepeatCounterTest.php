@@ -15,7 +15,9 @@
         $result = $test_RepeatCounter->countRepeats($needle, $haystack);
 
         //Assert
-        $this->assertEquals("true", $result);
+        $this->assertEquals(1, $result);
         }
+
+        
     }
 ?>
