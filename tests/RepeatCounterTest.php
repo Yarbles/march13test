@@ -46,5 +46,19 @@
             $this->assertEquals(2, $result);
         }
 
+        function test_countRepeatsWholeWord()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $needle = "cat";
+            $haystack = "I am walking my cat to the cathedral";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($needle, $haystack);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
     }
 ?>

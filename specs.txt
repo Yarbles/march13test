@@ -22,13 +22,13 @@ This ensures the correct number of instances are returned when multiple instance
 This ensures that the program will not mistake a string of letters that appear in a larger word for the desired word itself.
 
 
-5. The program will find needle in haystack even if capitalization does not match between the two inputs.
+BONUS (time permitting) 5. The program will find needle in haystack even if capitalization does not match between the two inputs.
     e.g., needle = "TALE" and haystack = "tale of two cities," the program will return "1."
 
 This ensures that the user can ignore capitalization when performing a search and still receive the correct number of instances.
 
 
-BONUS (time permitting): 6. The program will search needle for haystack and return haystack with every instance of needle in bold.
+BONUS (time permitting) 6. The program will search needle for haystack and return haystack with every instance of needle in bold.
     e.g., needle = "tale" and haystack = "tale of two cities," the program will return "<b>tale</b> of two cities."
 
 This tests to ensure the program replaces the simple 'number of instances' output with the original searched string.
