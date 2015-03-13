@@ -31,5 +31,20 @@
             //Assert
             $this->assertEquals(0, $result);
         }
+
+        function test_countRepeatsInstances()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $needle = "big";
+            $haystack = "the big cat entered the big room";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($needle, $haystack);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
+        )
     }
 ?>
