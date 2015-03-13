@@ -1,0 +1,17 @@
+1. The program will receive two inputs (from here on, "needle" and "haystack") from the user and will return "true" if "needle" appears in "haystack."
+   e.g., if needle = "tale" and haystack = "tale of two cities," the program wil return "true,"
+
+This spec provides a test for a positive outcome and ensures the efficacy of the search function on a basic level.
+
+
+2. If "needle" does not appear in "haystack," the program will return "false."
+    e.g., needle = "peach" and haystack = "tale of two cities," the program returns false.
+
+This tets a negative outcome.
+
+
+3. The program will search "haystack" for "needle" and return the number of instances the latter appears in the former.
+
+e.g., needle = "two" and haystack = "tale of two cities," the program returns false.
+
+This expands the search function and tests the efficacy of the search function for the correct number of instances inputed.
