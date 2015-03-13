@@ -1,5 +1,5 @@
-1. The program will receive two inputs (from here on, "needle" and "haystack") from the user and will return "true" if "needle" appears in "haystack."
-   e.g., if needle = "tale" and haystack = "tale of two cities," the program wil return "true,"
+1. The program will receive two inputs (from here on, "needle" and "haystack") from the user and will return "true" if needle appears in haystack.
+   e.g., needle = "tale" and haystack = "tale of two cities," the program wil return "true,"
 
 This spec provides a test for a positive outcome and ensures the efficacy of the search function on a basic level.
 
@@ -7,11 +7,28 @@ This spec provides a test for a positive outcome and ensures the efficacy of the
 2. If "needle" does not appear in "haystack," the program will return "false."
     e.g., needle = "peach" and haystack = "tale of two cities," the program returns false.
 
-This tets a negative outcome.
+This tests for a negative outcome.
 
 
 3. The program will search "haystack" for "needle" and return the number of instances the latter appears in the former.
+    e.g., needle = "big" and haystack = "the big cat entered the big room," the program returns "2".
 
-e.g., needle = "two" and haystack = "tale of two cities," the program returns false.
+This ensures the correct number of instances are returned when multiple instances of needle appear in haystack.
 
-This expands the search function and tests the efficacy of the search function for the correct number of instances inputed.
+
+4. The program will search "haystack" for only whole word instances of "needle" and return the number of whole word instances.
+        e.g., needle = "cat" and haystack = "I am walking my cat to the cathedral," the program will return "1".
+
+This ensures that the program will not mistake a string of letters that appear in a larger word for the desired word itself.
+
+
+5. The program will find needle in haystack even if capitalization does not match between the two inputs.
+    e.g., needle = "TALE" and haystack = "tale of two cities," the program will return "1."
+
+This ensures that the user can ignore capitalization when performing a search and still receive the correct number of instances.
+
+
+6. The program will search needle for haystack and return haystack with every instance of needle in bold.
+    e.g., needle = "tale" and haystack = "tale of two cities," the program will return "<b>tale</b> of two cities."
+
+This tests to ensure the program replaces the simple 'number of instances' output with the original searched string.
