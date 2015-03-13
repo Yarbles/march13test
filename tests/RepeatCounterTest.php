@@ -6,18 +6,30 @@
     {
         function test_countRepeats()
         {
-        //Arrange
-        $test_RepeatCounter = new RepeatCounter;
-        $needle = "tale";
-        $haystack = "tale of two cities";
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $needle = "tale";
+            $haystack = "tale of two cities";
 
-        //Act
-        $result = $test_RepeatCounter->countRepeats($needle, $haystack);
+            //Act
+            $result = $test_RepeatCounter->countRepeats($needle, $haystack);
 
-        //Assert
-        $this->assertEquals(1, $result);
+            //Assert
+            $this->assertEquals(1, $result);
         }
 
-        
+        function test_countRepeatsNegative()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $needle = "peach";
+            $haystack = "false";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($needle, $haystack);
+
+            //Assert
+            $this->assertEquals(0, $result);
+        }
     }
 ?>
