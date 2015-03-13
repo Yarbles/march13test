@@ -23,7 +23,7 @@
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
             $needle = "peach";
-            $haystack = "false";
+            $haystack = "tale of two cities";
 
             //Act
             $result = $test_RepeatCounter->countRepeats($needle, $haystack);
@@ -45,6 +45,6 @@
             //Assert
             $this->assertEquals(2, $result);
         }
-        )
+
     }
 ?>
