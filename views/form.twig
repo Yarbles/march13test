@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <title>Word Finder</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Word Finder</h2>
+            <p>How many times does the word you enter in the first form appear in the second?</p>
+            <form action="/results">
+                <div class="form-group">
+                    <label for="input">Form 1</label>
+                    <input id="input" name="input" type="text" class="form-control">
+                    <form action="/results">
+                        <div class="form-group">
+                            <label for="input2">Form 2</label>
+                            <input id="input2" name="input2" type="text" class="form-control">
+                    <br>
+                    <button type="submit" class="btn btn-info">Find it!</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,6 +1,6 @@
 <?php
     require_once __DIR__."/../vendor/autoload.php";
-    require_once __DIR__."/../src/Scrabble.php";
+    require_once __DIR__."/../src/RepeatCounter.php";
 
     $app = new Silex\Application();
 
@@ -15,10 +15,10 @@
     });
 
     $app->get("/results", function() use ($app) {
-        $entry = new Scrabble;
-        $totalscore = $entry->score($_GET["input"]);
-        return $app['twig']->render("results.twig", array('points' => $totalscore));
+        $entry = new RepeatCounter;
+        $matches = $entry->countRepeats($_GET["input"], $_GET["input2"]);
+        return $app['twig']->render("results.twig", array('matches' => $matches));
     });
-    
+
     return $app;
 ?>
